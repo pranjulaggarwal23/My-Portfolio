@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pranjul Aggarwal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body style="background-color: black;">
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certifications</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="banner">
+    <div class="banner-left">
+        <h1 class="banner-name">Pranjul Aggarwal</h1>
+        <p>Email: <a href="mailto:pranjulaggarwal004@gmail.com">pranjulaggarwal004@gmail.com</a></p>
+        <p>Phone: <a href="tel:+91-8979608011">+91 8979608011</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/pranjul-aggarwal" target="_blank">linkedin.com/in/pranjul-aggarwal</a></p>
+    </div>
+    <div class="banner-right">
+        <img src="profile.jpg" alt="Vikrant Photo" class="banner-photo">
+      </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I'm Pranjul Aggarwal, a Computer Science and Engineering student at Lovely Professional University, Punjab.
+        I have a strong foundation in data handling, lab and equipment management, and presentation skills. 
+        Passionate about building solutions, I work with both backend and frontend technologies and thrive in collaborative environments.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skills-column">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Data Handling</li>
+                <li>Equipment Handling</li>
+                <li>Lab Management</li>
+                <li>Presentation Skills</li>
+            </ul>
+        </div>
+        <div class="skills-column">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication Skills</li>
+                <li>Creative Thinking</li>
+                <li>Problem-Solving Skills</li>
+                <li>Time Management</li>
+                <li>Team Player</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+        <!-- Project 1 -->
+        <a href="" class="project-link">
+            <div class="project-container">
+                <div class="project-description">
+                    <h3>Library Management System</h3>
+        <p><strong>Date:</strong> September 2023</p>
+        <p>Created a searchable and dynamic system for book management, widely used by university students.</p>
+        <ul>
+            <li>Technologies: C++, Node.js, HTML, CSS</li>
+        </ul>
+                </div>
+                <div class="project-image">
+                    <img src="p2.png" alt="Web Designing Project">
+                </div>
+            </div>
+        </a>
+        <!-- Project 2 -->
+        <a href="" class="project-link">
+            <div class="project-container reverse">
+                <div class="project-description">
+                    <h3>Amazon Sales Analysis</h3>
+                    <h3>Art Store Website</h3>
+        <p><strong>Date:</strong> October 2022</p>
+        <p>Developed a full-stack, responsive e-commerce website for purchasing various pictures including ancient paintings.</p>
+        <ul>
+            <li>Used CSS, REST APIs, dynamic pagination, user authentication, and personalized storage features.</li>
+        </ul>
+                </div>
+                <div class="project-image">
+                    <img src="p1.jpg" alt="Amazon Sales Analysis">
+                </div>
+            </div>
+        </a>
+</section>
+
+<section id="certificates" class="section">
+    <h2>Certifications</h2>
+    <a href="#" class="certificate-link">
+        <div class="certificate-container">
+            <div class="certificate-description">
+                <h3>Object-Oriented C++: Inheritance and Encapsulation – Coursera (5 weeks)</h3>
+            </div>
+            <div class="certificate-image">
+                <img src="c2.png" alt="Certificate 1">
+            </div>
+        </div>
+    </a>
+    <a href="#" class="certificate-link">
+        <div class="certificate-container reverse">
+            <div class="certificate-description">
+                <h3>R Programming – Coursera (4 weeks)</h3>
+            </div>
+            <div class="certificate-image">
+                <img src="c1.png" alt="Certificate 2">
+            </div>
+        </div>
+    </a>
+    <a href="#" class="certificate-link">
+        <div class="certificate-container">
+            <div class="certificate-description">
+                <h3>Excel Skills for Data Analytics and Visualization Specialization – Coursera (4 weeks)</h3>
+            </div>
+            <div class="certificate-image">
+                <img src="c3.png" alt="Certificate 1">
+            </div>
+        </div>
+    </a>
+</section>
+
+<section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <a href="#" class="certificate-link">
+        <div class="certificate-container">
+            <div class="certificate-description">
+                <h3>Awarded "Best Team" at LPU-NSS Seven Days Special Camp (June 2023)</h3>
+            </div>
+            <div class="certificate-image">
+                <img src="a1.png" alt="Certificate 1">
+            </div>
+        </div>
+    </a>
+    <a href="#" class="certificate-link">
+        <div class="certificate-container reverse">
+            <div class="certificate-description">
+                <h3>Participated in Vistaar2023, Spinal Cord Injury Rehab Conference, Blood Donation Camps, and more through NSS</h3>
+            </div>
+            <div class="certificate-image">
+                <img src="cpng" alt="Certificate 2">
+            </div>
+        </div>
+    </a>
+   
+</section>
+
+<footer id="contact">
+    <p>Contact me:</p>
+    <a href="mailto:pranjulaggarwal004@gmail.com">Email</a>
+    <a href="tel:+918979608011">Phone</a>
+    <a href="https://www.linkedin.com/in/pranjul-aggarwal" target="_blank">LinkedIn</a>
+</footer>
+
+</body>
+</html>
